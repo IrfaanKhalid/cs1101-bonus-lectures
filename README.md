@@ -3,14 +3,15 @@
 ## Introduction
 ### High-Level Goals
 + Understand some fundamental concepts related to software development
-+ Correct some common mistakes we've noticed grading
++ Correct some common mistakes we've noticed this semester
++ Discuss what constitutes good code style
 + Explore how IntelliJ (and similar IDEs) can make your life easier
 + Learn how to effectively debug
 
 ### Reminders
-+ Make sure you submit your ```debugExample.java``` file on Blackboard by 7:05p to receive extra credit!
++ Make sure you submit your ```example.java``` file on Blackboard by 7:05p to receive extra credit!
 
-## Advice for Computer Science
+## Advice for Your Computer Science Classes
 + It's supposed to be hard! Frustration is okay, normal, and should be welcomed as a motivator.
   + The payoff when you actually work through a difficult bug is immensely rewarding.
 + As developers, it's critical to meet specifications to the dot.
@@ -20,12 +21,12 @@
 ## Style
 ### Why is Code Style Important?
 + The style of your code matters because you're not always the only one looking at it.
+  + If your code style is poor, you won't be able to go back and understand it later.
+  + Neither will anyone else!
 + Software development isn't just writing code - it's maintaining it, too.
   + Adding new features
   + Fixing bugs
-  + Revamping old systems to be better
-+ If your code style is poor, you won't be able to go back and understand what you actually did.
-  + Neither will anyone else!
+  + Revamping or overhauling old systems
 
 ### What Constitutes Good Code Style?
 + Indentation
@@ -35,10 +36,17 @@
 + Inline spacing
   + Make sure you include spaces in your lines (near commas, parentheses, etc.) so it's easy to read each line, too.
 + Line length
-  + This one is a bit archaic, but reasonable line lengths help navigate code without horizontal scrolling.
+  + Reasonable line lengths help navigate code without horizontal scrolling.
+    + The roots of these regulations lie in how many characters could fit on a piece of paper when printing code.
   + Industry standards vary, but in this class we'll stick with **100** characters.
 + Comments
   + If you or someone else needs to maintain your code, comments explaining what's going on when it's not obvious help.
+  + Over-commenting vs Under-commenting
+    + Over-commenting is when your comments actually make reading/understanding your code more difficult.
+      + Not every single line of code needs a comment - only the tricky parts.
+    + Under-commenting is when your code is tricky to understand and your poor reader doesn't have comments to help.
+  + Try to strike a balance with insightful, brief, and well-distributed comments.
+    + This takes practice!
 + Clear, concise solutions
   + Convoluted solutions are hard to follow - even with comments. 
   + A good example of this is a long series of nested if-statements, like you saw in PA08.
@@ -49,8 +57,9 @@
   + If you run into an error in your code, you can pinpoint _exactly_ where it occurred.
 
 ### Further Reading
-+ My favorite code style guide is probably NASA's, summarized [here](http://sdtimes.com/nasas-10-rules-developing-safety-critical-code/).
-+ [Facebook](https://github.com/facebook/jcommon/wiki/Coding-Standards) also has a good style guide.
++ My favorite code style guide is NASA's, summarized [here](http://sdtimes.com/nasas-10-rules-developing-safety-critical-code/).
+  + TL;DR - Keep things clear, simple, concise, and local
++ [Facebook](https://github.com/facebook/jcommon/wiki/Coding-Standards) also has a good Java style guide.
 + Forewarning - standards differ between companies for specific style components, such as line length, tab size, etc.
   + Wherever you are, follow the style guide to maintain consistency.
   + While some parts of your style can vary, general style guidelines do exist - NASA's guide does a great job of this.
@@ -106,10 +115,49 @@ Open _example-project_ in IntelliJ to get started.
 
        ``` 
     4. Make sure you got the blank line at the end. Try making a new file to test this out.
-+ *Checkstyle Plugin*
++ Checkstyle Plugin
   + CheckStyle-IDEA is a plugin for IntelliJ - i.e., an extra piece of software you can install - that checks your style.
-    + No, not your clothes - your code style!
   + You can find it [here](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea).
 
 ## Debugging
+### What is debugging?
++ When we write code, we sometimes run into errors called *bugs*.
++ To  *debug* is to remove those bugs - i.e., identify the errors in our code and fix them so the code functions as intended.
 
+### What is a debugger?
++ A debugger is a program, usually included in your IDE, that helps you find those errors.
+
+### Why learn how to debug?
++ You're probably used to adding many *println()* statements to your code to figure out what's wrong with it.
+  + This can help you identify what values variables hold, where your code executes (or doesn't), etc.
++ A debugger helps you do this, but more efficiently and gives you greater insight into what your program is doing.
++ In CS2201 (Data Structures), effective debugging will be a huge time-saver.
++ Modern debuggers are comprehensive and provide huge amounts of info that can help you locate bugs in your code.
+
+### Key parts of a debugger
++ Breakpoints
+  + By setting breakpoints, you can run through your program and stop its execution at a specific point.
+  + This can be helpful when you want everything before a breakpoint to run normally, but then observe behavior at a given point you think is causing trouble.
++ Stepping
+  + Debuggers allow you to *step* through your program line-by-line to observe what's happening.
+  + Step into
+    + Executes code one statement at a time.
+    + If the statement is a call to a procedure, the next statement displayed is the first statement in the procedure.
+  + Step over
+    + Similar to *step into*
+    + When the current statement contains a procedure, *step over* executes the procedure as a unit, and 
+      then steps to the next statement in the current procedure. 
+  + Step out
+    + Executes the remaining lines of a function in which the current execution point lies.
+    + The next statement displayed is the statement following the procedure call.
++ State and call stack
+    + Many debuggers allow you to view the state of variables and values of parameters at given points in your program.
+    + You can also view the *call stack* - a structure showing what procedures have been called by other procedures and in   what order.
++ [Reference](https://msdn.microsoft.com/en-us/library/office/gg251651.aspx)
+
+## Conclusion
+### Summary
++ It's okay to get frustrated when you code - that's a natural part of the process and it's how you learn.
++ Code style is critical for code maintenance and maintainability.
++ IDEs like IntelliJ are your friend!
++ Debuggers are incredibly useful and can help you fix errors efficiently.
