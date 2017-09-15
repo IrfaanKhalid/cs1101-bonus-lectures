@@ -1,163 +1,22 @@
-# CS 1101 - Style and Debugging
+# CS 1101 - 
 
-## Introduction
-### High-Level Goals
-+ Understand some fundamental concepts related to software development
-+ Correct some common mistakes we've noticed this semester
-+ Discuss what constitutes good code style
-+ Explore how IntelliJ (and similar IDEs) can make your life easier
-+ Learn how to effectively debug
+## Who are you?
+Hi! My name is Irfaan Khalid. I'm a passionate software engineer, hackathon organizer, and aspiring teacher. I'm a TA for CS 1101 - an introductory Java course - at Vanderbilt University, and absolutely love guiding students as they enter the field of computer science.
 
-### Reminders
-+ Make sure you submit your ```example.java``` file on Blackboard by 7:05p to receive extra credit!
+## What is this?
+This repository contains notes and slide decks for bonus lectures I teach for CS 1101. It can be used to supplement the lectures or as a standalone resource to learn more about some introductory computer science topics that we don't have enough time to cover in lecture.
 
-## Advice for Your Computer Science Classes
-+ It's supposed to be hard! Frustration is okay, normal, and should be welcomed as a motivator.
-  + The payoff when you actually work through a difficult bug is immensely rewarding.
-+ As developers, it's critical to meet specifications to the dot.
-  + If you were to be hired for a software development project by a client/customer, even if you don't think the specification is ideal, it's your job to meet it to the dot as a professional.
-  + In CS1101, it can be hard to meet all specifications, but they're in place to guide you and show you what it's like to work with a set of explicit instructions.
+### Directory Structure
+Here's a high-level breakdown of the directory structure:
++ ```00-example-project``` - A sample IntelliJ project associated with my lectures.
++ ```01-intellij-tips-and-tricks/``` - Slides and notes for lecture 01.
++ ```02-dealing-with-debugging/``` - Slides and notes for lecture 02.
++ ```03-moving-forward-in-cs/``` - Slides and notes for lecture 03.
 
-## Style
-### Why is Code Style Important?
-+ The style of your code matters because you're not always the only one looking at it.
-  + If your code style is poor, you won't be able to go back and understand it later.
-  + Neither will anyone else!
-+ Software development isn't just writing code - it's maintaining it, too.
-  + Adding new features
-  + Fixing bugs
-  + Revamping or overhauling old systems
+## Why does this exist?
+Like I said, there's a slew of topics for which there simply isn't enough time during lecture to cover. I hope for it to help students by serving as a supplement to their lectures and providing some perspective into _why_ CS 1101 matters and what software development looks like after the course.
 
-### What Constitutes Good Code Style?
-+ Indentation
-  + Be consistent so it's easy to see how your code nests.
-+ Whitespace
-  + If your code is all cramped together, it'll be hard to read through it.
-+ Inline spacing
-  + Make sure you include spaces in your lines (near commas, parentheses, etc.) so it's easy to read each line, too.
-+ Line length
-  + Reasonable line lengths help navigate code without horizontal scrolling.
-    + The roots of these regulations lie in how many characters could fit on a piece of paper when printing code.
-  + Industry standards vary, but in this class we'll stick with **100** characters.
-+ Comments
-  + If you or someone else needs to maintain your code, comments explaining what's going on when it's not obvious help.
-  + Over-commenting vs Under-commenting
-    + Over-commenting is when your comments actually make reading/understanding your code more difficult.
-      + Not every single line of code needs a comment - only the tricky parts.
-    + Under-commenting is when your code is tricky to understand and your poor reader doesn't have comments to help.
-  + Try to strike a balance with insightful, brief, and well-distributed comments.
-    + This takes practice!
-+ Clear, concise solutions
-  + Convoluted solutions are hard to follow - even with comments. 
-  + A good example of this is a long series of nested if-statements, like you saw in PA08.
-    + They're hard to follow and inefficient from a compilation standpoint.
-+ Modularity
-  + Keep your methods short and specific - each method only needs to do one thing.
-  + This way, organizing your code is easy.
-  + If you run into an error in your code, you can pinpoint _exactly_ where it occurred.
+## I have a question or feedback!
+If you have questions or feedback, feel free to email me at [irfaan.khalid@vanderbilt.edu](mailto:irfaan.khalid@vanderbilt.edu).
 
-### Further Reading
-+ My favorite code style guide is NASA's, summarized [here](http://sdtimes.com/nasas-10-rules-developing-safety-critical-code/).
-  + TL;DR - Keep things clear, simple, concise, and local
-+ [Facebook](https://github.com/facebook/jcommon/wiki/Coding-Standards) also has a good Java style guide.
-+ Forewarning - standards differ between companies for specific style components, such as line length, tab size, etc.
-  + Wherever you are, follow the style guide to maintain consistency.
-  + While some parts of your style can vary, general style guidelines do exist - NASA's guide does a great job of this.
-
-## Using IDEs
-### What _is_ an IDE?
-+ An IDE - or an _Integrated Development Environment_, is a comprehensive software application that provides one place to write, compile, test, and deploy code.
-  + Specific featurse will vary, but most modern IDEs are pretty similar.
-+ IntelliJ is an IDE made by JetBrains, a company that produces many other IDEs.
-  + CLion for C/C++
-  + PyCharm for Python
-  + WebStorm for JavaScript/PHP/other web development
-
-### IntelliJ's Features and Styling Your Code
-Make sure you've downloaded this GitHub repository (either ```git clone``` it or download it as a .zip file).
-Open _example-project_ in IntelliJ to get started.
-
-+ IDEs can be especially useful for the *editing* process.
-+ Reformat Code (*Code → Reformat Code*)
-  + This can fix your **inline spacing** and **indentation** issues.
-+ Default line length (*File → Settings → Editor → Code Style → Java → Right margin*)
-  + In CS1101, keep your lines at or under **100** characters.
-  + IntelliJ's editor shows you a vertical line to keep you on track.
-  + If you'd like, you can enable the *Wrap on Typing* feature so you never exceed your preset limit.
-  + Alternatively, the *Ensure right margin is never exceeded* option is useful.
-+ Comments
-  + Java uses *Javadoc* comments, which are required on your assignments from PA08 onward.
-  + Javadoc comments are useful because they're easily parsed into *Javadocs*, which is how
-    Java's official online API references are formatted.
-  + After you declare a method, IntelliJ can help you automatically generate Javadoc comments.
-    1. Place the caret before the declaration.
-    2. Type the opening block comment /**, and press Enter.
-    3. Add meaningful description of parameters and return values.
-  + Also write comments detailing tricky pieces of code.
-    + Complicated loops, unconventional logic, and other non-obvious code.
-+ Default Template
-  + IntelliJ can automatically include your header comment block in every ```.java``` file you make!
-  + Follow these steps:
-    1. Navigate to *File → Settings → Editor → File and Code Templates → Class*
-    2. Remove info above ```public class ${NAME}```
-    3. Copy and paste the following header template:
-       ```
-       /* Name:
-        * VUnetID:
-        * Email:
-        * Class: CS 1101 - Vanderbilt University
-        * Honor statement: I agree to have neither given nor received
-        *                  unauthorized aid on this assignment.
-        * Date: ${DATE}
-        *
-        * Description: 
-        */
-
-       ``` 
-    4. Make sure you got the blank line at the end. Try making a new file to test this out.
-+ Checkstyle Plugin
-  + CheckStyle-IDEA is a plugin for IntelliJ - i.e., an extra piece of software you can install - that checks your style.
-  + You can find it [here](https://plugins.jetbrains.com/plugin/1065-checkstyle-idea).
-
-## Debugging
-### What is debugging?
-+ When we write code, we sometimes run into errors called *bugs*.
-+ To  *debug* is to remove those bugs - i.e., identify the errors in our code and fix them so the code functions as intended.
-
-### What is a debugger?
-+ A debugger is a program, usually included in your IDE, that helps you find those errors.
-
-### Why learn how to debug?
-+ You're probably used to adding many *println()* statements to your code to figure out what's wrong with it.
-  + This can help you identify what values variables hold, where your code executes (or doesn't), etc.
-+ A debugger helps you do this, but more efficiently and gives you greater insight into what your program is doing.
-+ In CS2201 (Data Structures), effective debugging will be a huge time-saver.
-+ Modern debuggers are comprehensive and provide huge amounts of info that can help you locate bugs in your code.
-
-### Key parts of a debugger
-+ Breakpoints
-  + By setting breakpoints, you can run through your program and stop its execution at a specific point.
-  + This can be helpful when you want everything before a breakpoint to run normally, but then observe behavior at a given point you think is causing trouble.
-+ Stepping
-  + Debuggers allow you to *step* through your program line-by-line to observe what's happening.
-  + Step into
-    + Executes code one statement at a time.
-    + If the statement is a call to a procedure, the next statement displayed is the first statement in the procedure.
-  + Step over
-    + Similar to *step into*
-    + When the current statement contains a procedure, *step over* executes the procedure as a unit, and 
-      then steps to the next statement in the current procedure. 
-  + Step out
-    + Executes the remaining lines of a function in which the current execution point lies.
-    + The next statement displayed is the statement following the procedure call.
-+ State and call stack
-    + Many debuggers allow you to view the state of variables and values of parameters at given points in your program.
-    + You can also view the *call stack* - a structure showing what procedures have been called by other procedures and in   what order.
-+ [Reference](https://msdn.microsoft.com/en-us/library/office/gg251651.aspx)
-
-## Conclusion
-### Summary
-+ It's okay to get frustrated when you code - that's a natural part of the process and it's how you learn.
-+ Code style is critical for code maintenance and maintainability.
-+ IDEs like IntelliJ are your friend!
-+ Debuggers are incredibly useful and can help you fix errors efficiently.
+If you find an error anywhere in the guide, please feel free to make a pull request on GitHub.
