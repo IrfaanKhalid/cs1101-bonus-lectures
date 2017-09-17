@@ -7,8 +7,8 @@
 
 ## IDEs
 ### What _is_ an IDE?
-+ An IDE - or an _Integrated Development Environment_, is a comprehensive software application that provides one place to write, compile, test, and deploy code.
-  + Specific featurse will vary, but most modern IDEs are pretty similar.
++ An IDE - or an _Integrated Development Environment_, is a comprehensive software application that provides one place to write, build, test, and deploy code.
+  + Specific features will vary, but most modern IDEs are relatively similar.
 + IntelliJ is an IDE made by JetBrains, a company that produces many other IDEs.
   + CLion for C/C++
   + PyCharm for Python
