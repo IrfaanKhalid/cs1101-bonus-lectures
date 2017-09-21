@@ -45,7 +45,7 @@
     + This takes practice!
 + Clear, concise solutions
   + Convoluted solutions are hard to follow - even with comments. 
-  + A good example of this is a long series of nested if-statements, like you saw in PA08.
+  + For example, it's better to use a loop than to individually write out the statements of each iteration.
     + They're hard to follow and inefficient from a compilation standpoint.
 + Modularity
   + Keep your methods short and specific - each method only needs to do one thing.
@@ -73,7 +73,7 @@ Open _example-project_ in IntelliJ to get started.
   + If you'd like, you can enable the *Wrap on Typing* feature so you never exceed your preset limit.
   + Alternatively, the *Ensure right margin is never exceeded* option is useful.
 + Comments
-  + Java uses *Javadoc* comments, which are required on your assignments from PA08 onward.
+  + Java generally uses *Javadoc* comments.
   + Javadoc comments are useful because they're easily parsed into *Javadocs*, which is how
     Java's official online API references are formatted.
   + After you declare a method, IntelliJ can help you automatically generate Javadoc comments.
