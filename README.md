@@ -6,7 +6,7 @@ Hi! My name is Irfaan Khalid. I'm a passionate software engineer, hackathon orga
 This repository contains notes and slide decks for bonus lectures I teach for CS 1101. It can be used to supplement the lectures or as a standalone resource to learn more about some introductory computer science topics that we don't have enough time to cover in lecture.
 
 Here's a high-level breakdown of the directory structure:
-+ ```00-example-project``` - A sample IntelliJ project associated with my lectures.
++ ```00-example-project/``` - A sample IntelliJ project associated with my lectures.
 + ```01-intellij-tips-and-tricks/``` - Slides and notes for lecture 01.
 + ```02-dealing-with-debugging/``` - Slides and notes for lecture 02.
 + ```03-moving-forward-in-cs/``` - Slides and notes for lecture 03.
