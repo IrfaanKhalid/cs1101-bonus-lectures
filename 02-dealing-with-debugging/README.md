@@ -48,7 +48,7 @@ I don't fundamentally _disagree_ with this approach - it's something I do from t
 That being said, we can do a bit better.
 
 ### The debugger approach
-With IDEs like IntelliJ, or even from a command line, we can use our debugger to help diagnose bugs. See below for tips on using each of the previously discussed features our debugger offers.
+#### Using debugger features
 + Placing breakpoints
   + Place breakpoints on lines of code you think are causing a problem.
   + Place breakpoints on lines of code at which you want to know the exact state of all your variables.
@@ -68,6 +68,9 @@ With IDEs like IntelliJ, or even from a command line, we can use our debugger to
   + The *call stack* allows you to see the order in which methods called other methods
     + Java programs begin in the _main()_ method, which calls other methods, which call other methods, etc.
     + This is all formatted in a _stack_ - the first method called lies at the bottom, and the subsequent methods called are placed on top of our stack
+
+#### Writing driver methods
+If you want to individually test methods, try calling _only_ that method from _main()_ and test only its functionality. The whole purpose of writing methods is to componentize your code; that is, each method should do _one_ task and do it extraordinarily well. If a given task fails, you'll know immediately that the single method assigned to that task is to blame.    
 
 ### Common errors to keep in mind
 Oftentimes, our code is plagued by one of several _very_ common errors. Try keeping these in mind when you start debugging so you can either eliminate the obvious suspects or find something small that's straightforward to fix.
@@ -101,4 +104,4 @@ Debugging is a skill that goes a long way - learn it well now, and it'll save yo
 Debugging is all about playing detective. Debuggers set you up to have a _very_ clear view of all the things at play in your program: what procedures call what other procedures, what memory is being allocated, which variables are given certain values, etc. You've been set up to search for the bug given all this information and don't have to worry about finding that info. In other words, you've been set up to bat - all you've got to do is swing.
 
 ## References
-[JetBrains' guide to debugging Java applications](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html).
+[JetBrains' guide to debugging Java applications](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
