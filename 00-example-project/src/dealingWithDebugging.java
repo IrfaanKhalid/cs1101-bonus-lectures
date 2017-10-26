@@ -11,15 +11,19 @@ public class dealingWithDebugging {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String testString = "Yoooooo!!!!! That was soooooo dope!!!!!!!!!!!! OMG!!! THANKU!!!!";
+        String caesar = "1316 1926 0914 0526 0502";
 
         // First, let's figure out where our crashes happen and fix some String problems
         //locationDebugging(testString);
+        //System.out.println();
 
         // Now it's time to see some tricky loops
-        //loopDebugging();
+        //loopDebugging(caesar, 5);
+        //System.out.println();
 
         // But wait - there's more! Time for some nested loops
         //nestedLoopDebugging();
+        //System.out.println();
 
         // Finally, let's test your true skills with some booleans
         //booleanDebugging(scanner);
@@ -29,9 +33,6 @@ public class dealingWithDebugging {
      * Example for finding the location of a program crash
      */
     private static void locationDebugging(String userString) {
-        // Let's start by printing our original String
-        System.out.println(userString + "\n");
-
         // Let's play with some substrings. TODO - This breaks! Can you fix it?
         System.out.println(userString.substring(0, userString.length() + 1));
 
