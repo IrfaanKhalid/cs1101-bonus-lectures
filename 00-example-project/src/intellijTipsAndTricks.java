@@ -10,14 +10,15 @@ public class intellijTipsAndTricks {
         debuggingExample(str);
     }
 
-    /**
-     * badstyleexampl - an example of BAD style
+    /*
+     * badStyleExample - this does x y and z
      */
-    private static void badstyleexampl() {
-    System.out.println();
-        for (int i=0;i <4;i++) {
-        debuggingExample("hello");
-            }
+    private static void badStyleExample() {
+        System.out.println();
+
+        for (int i = 0; i < 4; i++) {
+            debuggingExample("hello");
+        }
     }
 
     /**
@@ -25,7 +26,7 @@ public class intellijTipsAndTricks {
      */
     private static void badstyleexampl2() {
         System.out.println();
-        for (int i=0;i <4;i++) {
+        for (int i = 0; i < 4; i++) {
             debuggingExample("hello");
         }
     }
