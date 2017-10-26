@@ -1,6 +1,5 @@
 /*
- * // TODO - Change to your name
- * Irfaan Khalid
+ * // TODO - Add your name!
  * 10/26/2017
  *
  * Description: Debugging examples used to practice Java debugging in CS 1101.
@@ -13,11 +12,8 @@ public class dealingWithDebugging {
         Scanner scanner = new Scanner(System.in);
         String testString = "Yoooooo!!!!! That was soooooo dope!!!!!!!!!!!! OMG!!! THANKU!!!!";
 
-        // First, let's figure out where our crashes happen
-        locationDebugging(testString);
-
-        // Now that we've got a location, let's try to play with some String debugging
-        //stringDebugging();
+        // First, let's figure out where our crashes happen and fix some String problems
+        //locationDebugging(testString);
 
         // Now it's time to see some tricky loops
         //loopDebugging();
@@ -51,15 +47,14 @@ public class dealingWithDebugging {
         String tempStr = "";
         int i = 0;
 
-        // TODO - Our loop doesn't work correctly. Can you fix it?
-        while (i <= userString.length()) {
+        // Loop through every character in userString
+        while (i < userString.length()) {
             if (userString.charAt(i) != '!') {
-                // TODO - What's wrong with how we increment i?
+                // TODO - We've made a String indexing error. Can you find it?
                 i++;
                 tempStr += userString.charAt(i);
-            }
-            else {
-                while ((i < userString.length()) &&  (userString.charAt(i) == '!')) {
+            } else {
+                while ((i < userString.length()) && (userString.charAt(i) == '!')) {
                     i++;
                 }
 
@@ -70,21 +65,65 @@ public class dealingWithDebugging {
         // Replace exclamation points with periods
         tempStr = tempStr.replace("!", ".");
 
-        System.out.println(tempStr);
+        // Print out corrected String
+        System.out.println("Corrected: " + tempStr);
     }
 
     /**
      * Example for debugging loop errors
+     * Similar to PA06-A - A Caesar Cipher's decode() method
      */
-    private static void loopDebugging() {
+    private static void loopDebugging(String text, int shift) {
+        String decipheredMessage = "";
+        int i = 0;
 
+        // Walk down entire string. TODO - What's wrong with our counter?
+        while (i <= text.length()) {
+            // Skip blanks
+            if ((text.charAt(i) == ' ')) {
+                ++i;
+            }
+
+            // Pull two characters off text
+            String digString = text.substring(i, i + 2);
+
+            // Convert two digit string to an integer
+            int digits = Integer.parseInt(digString) - shift + 96;
+
+            // Convert integer code to a character
+            char letter = (char) digits;
+
+            // If shift is not in lowercase alphabet, adjust
+            if (letter < 'a') {
+                letter = (char) (letter + 26);
+            }
+
+            // Attach to our deciphered result
+            decipheredMessage += letter;
+
+            //move onto next two digit sequence
+            i += 2;
+        }
+
+        System.out.println("Deciphered: " + decipheredMessage);
     }
 
     /**
      * Example for debugging nested loop errors
+     * Similar to PA03-A - Which Way is Up?
      */
     private static void nestedLoopDebugging() {
+        // Feel free to change these!
+        char symbol = '*';
+        int height = 5;
 
+        // Nested loop to print the triangle. TODO - Can you find the errors?
+        for (int i = height; i >= 1; i--) {
+            for (int j = 1; j <= i; i++) {
+                System.out.print(symbol);
+                System.out.println();
+            }
+        }
     }
 
     /**
