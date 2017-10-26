@@ -1,5 +1,5 @@
 /*
- * // TODO - Add your name!
+ * TODO - Add your name!
  * 10/26/2017
  *
  * Description: Debugging examples used to practice Java debugging in CS 1101.
