@@ -81,7 +81,7 @@ public class dealingWithDebugging {
         while (i <= text.length()) {
             // Skip blanks
             if ((text.charAt(i) == ' ')) {
-                ++i;
+                i = ++i; // TODO - What's wrong with our increment?
             }
 
             // Pull two characters off text

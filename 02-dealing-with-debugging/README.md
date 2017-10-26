@@ -86,6 +86,8 @@ Oftentimes, our code is plagued by one of several _very_ common errors. Try keep
     + Oftentimes, you might be tried to access index -1 or the index right after the last character
       + Look at the variable you're using to access these indices and consider the values it holds 
 + Loops
+  + Check your work!
+    + Run the first two and the last two iterations by hand to make sure your loop behaves as expected
   + Off-by-one errors in for/while loops
     + These errors can often lead to other issues, such as incorrect String indexing
     + Always check your counting variables _and_ where they're used
