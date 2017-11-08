@@ -3,13 +3,13 @@
 ## Reviewing CS 1101
 ### Congratulations!
 + You've met tough deadlines 
-+ You've fixed challenging bugs, 
++ You've fixed challenging bugs
 + You've adhered to specfic style guidelines
 
 ### What have you learned?
 + The basics of programming and problem-solving
++ Some of the fundamentals of how computers work
 + How to write code that not only works, but is written _well_ and is maintainable
-+ The fundamentals of how computers work
 
 ### What can you do with what you've learned?
 + Learn more
