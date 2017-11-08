@@ -31,7 +31,7 @@
     + These show what it's like to work with very explicit instructions
 
 ### Vanderbilt University CS courses
-_My personal favorite courses are in bold_
+_My personal favorite courses are in bold._
 + Software Design and Problem-Solving
   + CS 2201 (Program Design and Data Structures)
   + CS 3251 (Intermediate Software Design)
@@ -44,9 +44,9 @@ _My personal favorite courses are in bold_
   + CS 3250 (Algorithms)
 + Many higher-level CS courses and technical electives!
 
-## Getting Involved Outside of the Classroom
+## Getting Involved in the CS Community
 + VandyHacks
-  + Attend our events
+  + Attend VandyHacks events
     + Annual hackathon
     + Hack nights
   + Apply to be an organizer in January
@@ -69,4 +69,3 @@ _My personal favorite courses are in bold_
   + Pretty much anything else!
 
 ## Questions and Answers
-Feel free to ask any lingering questions you have about CS 1101 or computer science as a whole!
