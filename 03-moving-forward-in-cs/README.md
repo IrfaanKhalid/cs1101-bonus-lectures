@@ -39,3 +39,4 @@
 + VandyApps
 + Women in Computing
 
+## Industry and Career
