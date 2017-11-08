@@ -44,7 +44,7 @@ _My personal favorite courses are in bold._
   + CS 3250 (Algorithms)
 + Many higher-level CS courses and technical electives!
 
-## Getting Involved in the CS Community
+## Getting Involved
 + VandyHacks
   + Attend VandyHacks events
     + Annual hackathon
