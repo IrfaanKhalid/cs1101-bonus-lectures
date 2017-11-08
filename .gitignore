@@ -1,0 +1,6 @@
+## Various .xml files
+*.xml
+
+## IntelliJ/VS Code
+.idea/*
+.vscode/*

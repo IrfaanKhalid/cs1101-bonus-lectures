@@ -18,7 +18,7 @@ public class dealingWithDebugging {
         //System.out.println();
 
         // Now it's time to see some tricky loops
-        //loopDebugging(caesar, 5);
+        //loopDebugging(caesar, 4);
         //System.out.println();
 
         // But wait - there's more! Time for some nested loops
@@ -26,7 +26,7 @@ public class dealingWithDebugging {
         //System.out.println();
 
         // Finally, let's test your true skills with some booleans
-        //booleanDebugging(scanner);
+        booleanDebugging(scanner);
     }
 
     /**
@@ -34,7 +34,7 @@ public class dealingWithDebugging {
      */
     private static void locationDebugging(String userString) {
         // Let's play with some substrings. TODO - This breaks! Can you fix it?
-        System.out.println(userString.substring(0, userString.length() + 1));
+        System.out.println(userString.substring(0, userString.length()));
 
         // Phew. We figured that one out. TODO - Can you find the location of the next crash?
         stringDebugging(userString);
@@ -49,9 +49,8 @@ public class dealingWithDebugging {
         int i = 0;
 
         // Loop through every character in userString
-        while (i < userString.length()) {
+        while (i <= userString.length() - 1) {
             if (userString.charAt(i) != '!') {
-                // TODO - We've made a String indexing error. Can you find it?
                 i++;
                 tempStr += userString.charAt(i);
             } else {
@@ -78,11 +77,11 @@ public class dealingWithDebugging {
         String decipheredMessage = "";
         int i = 0;
 
-        // Walk down entire string. TODO - What's wrong with our counter?
-        while (i <= text.length()) {
+        // Walk down entire string.
+        while (i <= text.length() - 1) {
             // Skip blanks
             if ((text.charAt(i) == ' ')) {
-                i = ++i; // TODO - What's wrong with our increment?
+                ++i; // TODO - What's wrong with our increment?
             }
 
             // Pull two characters off text
@@ -116,14 +115,15 @@ public class dealingWithDebugging {
     private static void nestedLoopDebugging() {
         // Feel free to change these!
         char symbol = '*';
-        int height = 5;
+        int height = 3;
 
-        // Nested loop to print the triangle. TODO - Can you find the errors?
+        // Nested loop to print the triangle.
         for (int i = height; i >= 1; i--) {
-            for (int j = 1; j <= i; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(symbol);
-                System.out.println();
+                //System.out.println();
             }
+            System.out.println();
         }
     }
 
@@ -146,7 +146,7 @@ public class dealingWithDebugging {
         System.out.println();
 
         // TODO - We can't quit out of this loop. Can you fix the bug?
-        while (userChoice != 'W' || userChoice != 'N' || userChoice != 'D' || userChoice != 'Q') {
+        while (userChoice == 'W' || userChoice == 'N' || userChoice == 'D' ||  userChoice != 'Q') {
             System.out.print("Choose a valid menu option: ");
             userChoice = Character.toUpperCase(scanner.nextLine().charAt(0));
         }

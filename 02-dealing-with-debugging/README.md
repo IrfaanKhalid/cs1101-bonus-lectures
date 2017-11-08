@@ -97,6 +97,7 @@ Oftentimes, our code is plagued by one of several _very_ common errors. Try keep
       + Especially if the inner loop relies on the outer loop's counting variable
     + Double-check your indexing and make sure you typed the correct variable names in the correct places
       + This is easy to mix up if your outer loop counter is, say, ```i``` and your inner loop counter is ```j```
+      
 ## Debugging Practice
 Please view the file ```00-example-project/src/dealingWithDebugging.java``` for examples of code that doesn't _quite_ work that you can use the debugger to help you fix.
 
