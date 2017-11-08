@@ -22,7 +22,8 @@
 
 ## Future Computer Science Courses
 ### General advice
-+ It's supposed to be hard! Frustration is okay, normal, and should be welcomed as a motivator
++ It's supposed to be hard! 
+  + Frustration is normal and should be welcomed as a motivator
   + The payoff when you actually work through a difficult bug is immensely rewarding
 + As developers, it's critical to meet specifications to the dot
   + Professionalism means delivering what the customer wants, even if it's not ideal
@@ -31,7 +32,7 @@
     + These show what it's like to work with very explicit instructions
 
 ### Vanderbilt University CS courses
-_My personal favorite courses are in bold._
+_My personal favorites are in bold._
 + Software Design and Problem-Solving
   + CS 2201 (Program Design and Data Structures)
   + CS 3251 (Intermediate Software Design)
@@ -49,23 +50,46 @@ _My personal favorite courses are in bold._
   + Attend VandyHacks events
     + Annual hackathon
     + Hack nights
-  + Apply to be an organizer in January
+    + Study nights
+  + If interested, apply to be an organizer in January
+  + Reach out to me for more info
 + VandyApps
   + Attend weekly sessions to learn new skills
+  + Reach out to Varun Arora or John Valin for more info
 + Women in Computing
-  + Attend GBMs
-  + Attend events like _Emerge_
+  + Attend GBMs and events like _Emerge_
+  + Elections are coming up
+    + Sign up for their [mailing list](https://goo.gl/forms/lmb9w9SXgTGwt0IC2) to get updates
+  + Reach out to Miti Joshi for more info
++ Others Organizations
+  + Code Ignite
+  + Theta Tau
+  + Phi Sigma Rho
+  + IEEE
 
-## Industry and Career
-+ Tech Internships
-  + Pursue them, but don't become obsessed
-  + General advice for pursuing internships
-    + **Apply** a lot of places
-    + Take advantage of **networking** opportunities
-    + **Practice** for technical interviews
-+ Careers
-  + Software engineering
-  + Technical consulting (and non-technical consulting!)
-  + Pretty much anything else!
+
+## Careers
+### General Thoughts
++ Computer Science gives you many career options
++ Students often ask, "_Is CS for me?_"  
+  + Do you enjoy it?
+  + Do you do well on the CS 1101 assignments?
+    + Tests aren't always the best indicator of your skill
++ If you pursue a career in Computer Science, I hope you find it as fulfilling as I have
+
+### Internships
++ Pursue them, but don't become obsessed
++ Generally difficult to find until you've taken CS 2201
+  + Undergraduate research is always a good option
++ Pursuing internships
+  + **Apply** a lot of places
+  + Take advantage of **networking** opportunities
+  + **Practice** for technical interviews
+
+### Career Paths
++ Software engineering
++ Technical consulting (and non-technical consulting!)
++ Academia
++ Pretty much anything else - employers love CS majors!
 
 ## Questions and Answers
