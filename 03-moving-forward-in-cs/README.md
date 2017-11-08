@@ -93,3 +93,4 @@ _My personal favorites are in bold._
 + Pretty much anything else - employers love CS majors!
 
 ## Questions and Answers
+Feel free to ask any lingering questions you have about anything covered in this lecture or otherwise!
